@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.FileIOTest" time="0.005" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.FileIOTest" time="0" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-24.0.1-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire/surefirebooter-20250708123906678_3.jar /home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire 2025-07-08T12-39-04_072-jvmRun1 surefire-20250708123906678_1tmp surefire_0-20250708123906678_2tmp"/>
+    <property name="sun.java.command" value="/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire/surefirebooter-20250710125606391_3.jar /home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire 2025-07-10T12-56-06_164-jvmRun1 surefire-20250710125606391_1tmp surefire_0-20250710125606391_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/test-classes:/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/classes:/home/zahin-abdullah-rakin/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/zahin-abdullah-rakin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/zahin-abdullah-rakin/.m2/repository/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0.jar:/home/zahin-abdullah-rakin/.m2/repository/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar:/home/zahin-abdullah-rakin/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar:/home/zahin-abdullah-rakin/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire/surefirebooter-20250708123906678_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/zahin-abdullah-rakin/Documents/6th semester/Software-Testing/PITest/target/surefire/surefirebooter-20250710125606391_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
     <property name="user.name" value="zahin-abdullah-rakin"/>
@@ -53,8 +53,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testFileWithInvalidNumber" classname="io.FileIOTest" time="0"/>
-  <testcase name="testEmptyFile" classname="io.FileIOTest" time="0.002"/>
-  <testcase name="testValidFile" classname="io.FileIOTest" time="0.001"/>
+  <testcase name="testInvalidFile" classname="io.FileIOTest" time="0"/>
+  <testcase name="testEmptyFile" classname="io.FileIOTest" time="0"/>
+  <testcase name="testValidFile" classname="io.FileIOTest" time="0"/>
+  <testcase name="testAnotherValidFile_PrimesTxt" classname="io.FileIOTest" time="0"/>
   <testcase name="testFileNotFound" classname="io.FileIOTest" time="0"/>
+  <testcase name="testNonexistentFileWithFakePath" classname="io.FileIOTest" time="0"/>
 </testsuite>

@@ -40,7 +40,7 @@ public class FileIO {
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				try {
-					int number = Integer.parseInt(line);
+					int number = Integer.parseInt(line.trim());
 					numbersList.add(number);
 				} catch (NumberFormatException e) {
 
@@ -48,7 +48,8 @@ public class FileIO {
 				}
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			// e.printStackTrace();
+			throw new RuntimeException("Failed to read file", e);
 		}
 		
 		if (numbersList.size() == 0) 

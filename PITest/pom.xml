@@ -64,12 +64,24 @@
             <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
-                <version>1.15.2</version>
+                <version>1.20.0</version>
                 <configuration>
                     <targetClasses>
+                        <!-- FULLY QUALIFIED CLASS OR WILDCARD -->
+                        <param>io.FileIO</param>
                         <param>math.*</param>
-                        <param>io.*</param>
                     </targetClasses>
+                    <targetTests>
+                        <param>io.FileIOTest</param>
+                        <param>math.*Test</param>
+                    </targetTests>
+                    <!-- Optional: speed & debugging -->
+                    <threads>4</threads>
+                    <outputFormats>
+                        <param>HTML</param>
+                    </outputFormats>
+                    <timestampedReports>false</timestampedReports>
+                    <verbose>true</verbose>
                 </configuration>
             </plugin>
         </plugins>
